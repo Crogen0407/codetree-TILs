@@ -6,7 +6,7 @@ int main() {
     cin >> s;
     for(int i = 0; i < 2; ++i)
     {
-        cout << s < endl;
+        cout << s << endl;
     }
     return 0;
 }
