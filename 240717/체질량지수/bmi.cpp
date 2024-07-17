@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     int h, w;
     cin >> h >> w;
-    int result = w/((h/100)*(h/100));
+    int result = (10000 * w) / (h * h);
     cout << result;
 
     if(result >= 25)
