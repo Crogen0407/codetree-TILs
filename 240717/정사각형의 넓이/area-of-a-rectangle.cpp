@@ -5,7 +5,7 @@ int main() {
     int n;
     cin >> n;
 
-    cin << n*n << endl;
+    cout << n*n << endl;
 
     if(n<5)
     {
