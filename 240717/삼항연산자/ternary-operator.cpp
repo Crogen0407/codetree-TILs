@@ -5,6 +5,6 @@ int main() {
     int a;
     cin >> a;
 
-    cout << a == 100 ? "pass" : "failure";
+    cout << ((a == 100) ? "pass" : "failure");
     return 0;
 }
