@@ -6,7 +6,7 @@ int main() {
     double n;
     cin >> n;
 
+cout.precision(4);
     cout << round((n * 30.48) *10) /10;
-
     return 0;
 }
