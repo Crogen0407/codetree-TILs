@@ -5,7 +5,7 @@ int main() {
     auto a = 3;
     auto b = "C";
 
-    cout << a;
+    cout << a << endl;
     cout << b;
     return 0;
 }
