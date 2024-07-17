@@ -12,5 +12,7 @@ int main() {
         cout << "book";
     else if(n >= mask)
         cout << "mask";
+    else 
+        cout << "no";
     return 0;
 }
