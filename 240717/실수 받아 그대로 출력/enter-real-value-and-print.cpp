@@ -2,9 +2,11 @@
 using namespace std;
 
 int main() {
-    double a;
-    cin >> a;
-    cout.precision(4);
-    cout << a;
+    double n;
+    cin >> n;
+    cout << fixed << setprecision(2);
+
+
+    cout << n;
     return 0;
 }
