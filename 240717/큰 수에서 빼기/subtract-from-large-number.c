@@ -4,8 +4,8 @@ int main() {
     int a, b;
     scanf("%n %n", a, b);
     if(a > b)
-        cout << a - b;
+        printf("%n", a - b);
     else
-        cout << b - a;
+        printf("%n",  b - a);
     return 0;
 }
