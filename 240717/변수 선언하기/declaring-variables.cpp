@@ -2,7 +2,10 @@
 using namespace std;
 
 int main() {
-    cout << 3;
-    cout << "C";
+    auto a = 3;
+    auto b = "C";
+
+    cout << a;
+    cout << b;
     return 0;
 }
