@@ -20,7 +20,7 @@ int main() {
     {
         for(int j = 0; j < strs[i].size(); j++)
         {
-            if (strs[i][j] == 'a')
+            if (strs[i][0] == 'a')
                 aCount++;
             
 
