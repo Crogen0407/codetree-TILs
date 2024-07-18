@@ -18,10 +18,12 @@ int main() {
     int aCount = 0;
     for (int i = 0; i < n; ++i)
     {
+        if (strs[i][0] == 'a')
+                aCount++;
+                
         for(int j = 0; j < strs[i].size(); j++)
         {
-            if (strs[i][0] == 'a')
-                aCount++;
+            
             
 
             ++charCount;
