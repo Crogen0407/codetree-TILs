@@ -3,6 +3,17 @@
 #include <string>
 using namespace std;
 
+int numberCount(int num)
+{
+    int count = 0;
+    while(num > 0)
+    {
+        num/=10;
+        count++;
+    }
+    return count;
+}
+
 int main() {
     int n;
     cin >> n;
@@ -23,16 +34,14 @@ int main() {
         sumNumber += numbers[i];
     }
 
-    string sumString = to_string(sumNumber);
-
-    string lastString;
-
-    for (int i = 1; i < sumString.size(); ++i)
+    int numberCnt = 1;
+    int resultNumberSum = 0;
+    for (int i = 0; i < numberCount(sumNumber)-1; ++i)
     {
-        cout << sumString[i];
+        cout << resultNumberSum;
+        resultNumberSum = (sumNumber/numberCnt)%10;
+        numberCnt *= 10;
     }
-    cout << sumString[0];
-
-
+    cout << (sumNumber/numberCnt)%10;
     return 0;
 }
