@@ -3,6 +3,17 @@
 #include <string>
 using namespace std;
 
+int pow(int a, int b)
+{
+    int result = 1;
+    for(int i = 0; i < b; i++)
+    {
+        result *= a;
+    }
+
+    return result;
+}
+
 int numberCount(int num)
 {
     int count = 0;
@@ -34,14 +45,11 @@ int main() {
         sumNumber += numbers[i];
     }
 
-    int numberCnt = 1;
-    int resultNumberSum = 0;
-    for (int i = 0; i < numberCount(sumNumber)-1; ++i)
+    for (int i = 2; i < numberCount(sumNumber)+1; ++i)
     {
-        cout << resultNumberSum;
-        resultNumberSum = (sumNumber/numberCnt)%10;
-        numberCnt *= 10;
+        cout << (sumNumber/pow(10, numberCount(sumNumber)-i))%10;
     }
-    cout << (sumNumber/numberCnt)%10;
+    cout << (sumNumber/pow(10, numberCount(sumNumber)-1))%10;
+
     return 0;
 }
