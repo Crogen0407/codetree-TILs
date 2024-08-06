@@ -20,7 +20,7 @@ int main() {
 
     for(int i = 0; i < strs.size(); ++i)
     {
-        if (strs[i].size()%2 == 1)
+        if (i%2==1)
             continue;
         else
             cout << strs[i] << endl;
